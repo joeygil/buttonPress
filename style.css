@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F1EDE6;
+    color: darkslategray;
+    font-family: 'Lato';
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+    font-family: 'Lato';
+    font-size: 3rem;
+    box-shadow: 5px 30px #888888;
+    border: 5px solid black;
+
+
+}
+
+button:hover {
+    content: "DANGER";
+    border: 5px solid white;
+    
+}
+
+button:hover span {
+    display:none;
+}
+
+button:active {
+    background: #e5e5e5;
+    outline: none;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+       -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+            box-shadow: inset 0px 0px 5px #c1c1c1;
+  }
+
+button:hover:before {
+    content: "DON'T DO IT!  ";
+}
+
+button:active span {
+    display: none;
+}
+
+
+button:active:after {
+    content: "  NOOO!";
+    color: red;
+}
+
