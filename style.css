@@ -57,7 +57,7 @@ button:hover:before {
     content: "DON'T DO IT!  ";
 }
 
-button:active:focus {
+button:active:after {
     content: "  NOOO!";
     overflow: none;
     color: red;
@@ -67,6 +67,6 @@ button:active:focus {
     margin: 50px;
     padding: 5px;
     font-size: 2rem;
-    
+    display: block;
 }
 
